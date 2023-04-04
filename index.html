@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="5;url=https://nknime.com" />
+    <script type="text/javascript">
+      let countDown = 5;
+      setInterval(function () {
+        countDown--;
+        if (countDown >= 0) {
+          document.getElementById("countdown").innerHTML = countDown;
+        }
+      }, 1000);
+    </script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        background-color: #f2f2f2;
+      }
+      p {
+        text-align: center;
+        margin-top: 50px;
+      }
+      #countdown {
+        font-weight: bold;
+        color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Redirecting to https://nknime.com in
+      <span id="countdown">5</span> seconds...
+    </p>
+  </body>
+</html>
